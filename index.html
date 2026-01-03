@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel-Sync Nigeria | Community Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fuel-Sync 🇳🇬</h1>
+        <p>Live community fuel prices and queue updates</p>
+    </header>
+
+    <main>
+        <section id="update-form">
+            <h3>Post an Update</h3>
+            <input type="text" id="stationName" placeholder="Station Name (e.g. Total, NNPC)">
+            <input type="number" id="fuelPrice" placeholder="Price per Litre (₦)">
+            <select id="queueLevel">
+                <option value="No Queue">No Queue</option>
+                <option value="Short Queue">Short Queue</option>
+                <option value="Long Queue">Long Queue</option>
+            </select>
+            <button onclick="addUpdate()">Share Update</button>
+        </section>
+
+        <section id="feed-container">
+            <h3>Recent Reports</h3>
+            <div id="updateFeed">
+                </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
